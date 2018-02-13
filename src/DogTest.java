@@ -9,7 +9,13 @@ public class DogTest
 {
     public static void main(String[] args)
     {
-	    Dog dog = new Dog("Spike");
-	    System.out.println(dog.getName() + " says " + dog.speak());
+	    Yorkshire ys = new Yorkshire("Yorkshire");
+	    Labrador lb = new Labrador("Labrador", "Blue");
+
+        System.out.println(String.format("%s says %s", ys.getName(), ys.speak()));
+        System.out.println(String.format("%s says %s", lb.getName(), lb.speak()));
+
+        System.out.println(String.format("%s average weight: %d", ys.getName(), ys.avgBreedWeight()));
+        System.out.println(String.format("%s average weight: %d", lb.getName(), lb.avgBreedWeight()));
     }
 }

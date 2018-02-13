@@ -9,6 +9,8 @@
 
 public class Yorkshire extends Dog
 {
+
+    private int breedWeight = 20;
        
     public Yorkshire(String name)
     {
@@ -21,6 +23,11 @@ public class Yorkshire extends Dog
     public String speak()
     {
     return "woof";
+    }
+
+    public int avgBreedWeight()
+    {
+        return this.breedWeight;
     }
     
     
